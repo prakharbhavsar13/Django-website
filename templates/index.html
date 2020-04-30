@@ -1,0 +1,120 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static '1styles.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  
+
+</style>
+</head>
+    
+    
+<body>
+<div class="bgimage">
+
+<div class="icon-bar">
+     <a href="https://www.facebook.com/prakhar.bhavsar.142" class="linkedin"><i class="fa fa-facebook"></i></a>
+  <a href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a>
+  <a href="https://www.linkedin.com/feed/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/results?search_query=world+best+car+and+bike+" class="youtube"><i class="fa fa-youtube"></i></a>
+  <a href="https://twitter.com/BhavsarPrakhar" class="linkedin"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/prakhar_bhavsar_77/" class="youtube1"><i class="fa fa-instagram"></i></a>
+</div>
+<div class="topnav">
+     {% if user.is_authenticated %}
+
+    <a style="color:red;">Hello,{{user.first_name}}</a>
+            <a href="logout">Logout</a>
+    {% else %}
+    <a href="login">Login</a>
+    <a href="form">Register</a>
+    {% endif %}
+    <a href="news">News</a>
+
+
+    <a href="contact">Contact</a>
+
+
+    <a href="\">Home</a>
+    
+</div>
+ 
+    <marquee style="font-family:Book Antiqua; color: #FFFFFF" bgcolor="#000080" scrollamount="25">Offer Available!!&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;   Hurry up!!&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Offer Available!! &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  Hurry up!!</marquee>
+    <br>
+     
+    <center><br>
+    
+    <button class="button" onclick="location.href = 'cars' ;">      Cars  </button>&nbsp;&nbsp;&nbsp;
+    
+    <button class="button" onclick="location.href = 'bikes' ;">  Bikes   </button>&nbsp;&nbsp;&nbsp;
+    
+        <button class="button" onclick="location.href = 'accessories' ;">Accessories</button>
+         
+    <h1 style="color:blue;" >Latest Bikes and Cars</h1>    
+       <h style="color:blue;" >Bikes, Cars and Accessories available at the shop at 7,Rishi nagar,Indore.</h>  
+    </center>
+    
+
+
+
+
+
+    <div class="row1">
+ {% for veh in vehs %}
+  <div class="column1">
+
+    <img src="{{veh.img.url}}"  alt=" " style="width:45%;height: 200px;" ><br>
+        <div>{{veh.name}}</div><br>
+      <div>Rs{{veh.price}}</div>
+
+
+</div>
+{% endfor %}
+    </div>
+
+
+
+
+
+
+
+</div>
+
+    
+
+
+    <div class="bottomnav">
+       <a href="\">Home</a>
+        <a href="form">Register</a>
+        <a href="contact">Contact</a>
+       <a href="news">News</a>
+    <a href="login">Login</a>
+    
+    
+    
+    
+           
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

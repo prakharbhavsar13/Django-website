@@ -1,0 +1,106 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static '1styles.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  
+
+</style>
+</head>
+    
+    
+<body>
+<div class="bgimage">
+ 
+<div class="topnav">
+     {% if user.is_authenticated %}
+
+    <a style="color:red;">Hello,{{user.first_name}}</a>
+            <a href="logout">Logout</a>
+    {% else %}
+    <a href="login">Login</a>
+    <a href="form">Register</a>
+    {% endif %}
+    <a href="news">News</a>
+
+
+    <a href="contact">Contact</a>
+
+
+    <a href="\">Home</a>
+
+</div>
+    <marquee style="font-family:Book Antiqua; color: #FFFFFF" bgcolor="#000080" scrollamount="18">Offer Available!!&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;   Hurry up!!&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Offer Available!! &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  Hurry up!!</marquee>
+    <br>
+        <br>
+     <br>
+        <br>
+  
+        
+    <fieldset>
+        <br>
+       
+        <center>
+            <h1>Current Situation Of Automobile Industry</h1>
+        <p>India became the fourth largest auto market in 2018 with sales increasing 8.3 per cent year-on-year to 3.99 million units. It was the seventh largest manufacturer of commercial vehicles in 2018.
+
+            The Two Wheelers segment dominates the market in terms of volume owing to a growing middle class and a young population. Moreover, the growing interest of the companies in exploring the rural markets further aided the growth of the sector.India is also a prominent auto exporter and has strong export growth expectations for the near future. Automobile exports grew 14.50 per cent during FY19. It is expected to grow at a CAGR of 3.05 per cent during 2016-2026. In addition, several initiatives by the Government of India and the major automobile players in the Indian market are expected to make India a leader in the two-wheeler and four-wheeler market in the world by 2020</p>
+        <p>Overall domestic automobiles sales increased at 6.71 per cent CAGR between FY13-19 with 26.27 million vehicles getting sold in FY19. Domestic automobile production increased at 6.96 per cent CAGR between FY13-19 with 30.92 million vehicles manufactured in the country in FY19.
+
+In FY19, year-on-year growth in domestic sales among all the categories was recorded in commercial vehicles at 17.55 per cent followed by 10.27 per cent year-on-year growth in the sales of three-wheelers.
+
+Premium motorbike sales in India crossed one million units in FY18. During January-September 2018, BMW registered a growth of 11 per cent year-on-year in its sales in India at 7,915 units. Mercedes Benz ranked first in sales satisfaction in the luxury vehicles segment according to J D Power 2018 India sales satisfaction index (luxury).
+
+Sales of electric two-wheelers are estimated to have crossed 55,000 vehicles in 2017-18.</p>
+        <p>BMW Group India has pledged a financial aid of Rs 3 crore to support the relief efforts in the fight against the Covid-19 pandemic. The employees of BMW Group India, BMW Group's Chennai plant and BMW India Financial Services have also made voluntary contributions towards the relief efforts.
+
+According to an official statement, BMW Group India has associated itself with government and non-government organisations to implement relief measures in Delhi-NCR and Chennai. It will participate in creation of an isolation ward for patients at the Government General Hospital in Chengalpattu, Tamil Nadu.
+
+BMW Group India will provide critical care equipment to medical facilities in Delhi-NCR and Chennai. It will also furnish personal protection equipment to the frontline medical personnel and law enforcement agencies in the two regions. Besides, the group will also take care of the nutrition needs of the economically marginalised families around its Chennai plant and Delhi-NCR.
+
+India is under a lockdown till May 3 to contain the spread of Covid-19, the disease caused by the novel coronavirus. As of now, over 11,000 people in the country have tested positive for Covid-19 and the death toll has touched 392. On the global scale, more than 19.86 lakh people have tested positive for Covid-19, with the death toll crossing 1.27 lakh.
+
+BMW Group India has implemented work from home across all its offices in the wake of the coronavirus outbreak. The production at the BMW Group's Chennai plant has been halted till May 3. The staff across the BMW, Mini and BMW Motorrad dealerships in India are also working from home.
+
+</p>
+        </center>
+        
+    </fieldset>
+</div>
+    
+    
+
+    <div class="bottomnav">
+    
+    <a href="\">Home</a>
+    <a href="form">Register</a>
+   <a href="contact">Contact</a>
+    <a href="login">Login</a>
+    
+    <a href="news">News</a>
+    
+    
+           
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

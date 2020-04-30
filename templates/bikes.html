@@ -1,0 +1,161 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static '1styles.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  
+
+</style>
+</head>
+    
+    
+<body>
+<div class="bgimage">
+  
+<div class="icon-bar">
+     <a href="https://www.facebook.com/prakhar.bhavsar.142" class="linkedin"><i class="fa fa-facebook"></i></a>
+  <a href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a>
+  <a href="https://www.linkedin.com/feed/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/results?search_query=world+best+car+and+bike+" class="youtube"><i class="fa fa-youtube"></i></a>
+  <a href="https://twitter.com/BhavsarPrakhar" class="linkedin"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/prakhar_bhavsar_77/" class="youtube1"><i class="fa fa-instagram"></i></a>
+</div>
+    
+<div class="topnav">
+     {% if user.is_authenticated %}
+
+    <a style="color:red;">Hello,{{user.first_name}}</a>
+            <a href="logout">Logout</a>
+    {% else %}
+    <a href="login">Login</a>
+    <a href="form">Register</a>
+    {% endif %}
+    <a href="news">News</a>
+
+
+    <a href="contact">Contact</a>
+
+
+    <a href="\">Home</a>
+    
+</div>
+ 
+    <marquee style="font-family:Book Antiqua; color: #FFFFFF" bgcolor="#000080" scrollamount="18">Offer Available!!&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;   Hurry up!!&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Offer Available!! &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  Hurry up!!</marquee>
+    <center><br>
+    
+    <button class="button" onclick="location.href = 'cars';">      Cars  </button>&nbsp;&nbsp;&nbsp;
+    
+    <button class="button" onclick="location.href = 'bikes';">  Bikes   </button>&nbsp;&nbsp;&nbsp;
+    
+        <button class="button" onclick="location.href = 'accessories';">Accessories</button>
+        
+         <br><br><br>
+         
+          <h style="color:blue;" >Bikes, Cars and Accessories available at the shop at 7,Rishi nagar,Indore.</h>
+           
+    </center>
+        
+
+    
+           
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="{% static 'b1.jfif' %}" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">tvs apache</div>
+     <div class="desc">₹ 70,000</div>
+</div>
+
+    
+     <div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="{% static 'b5.jfif' %}" alt="Mountains" width="600" height="400">
+  </a>
+ <div class="desc">Harley Davidson</div>
+    <div class="desc">₹ 3.50 Lacks</div>
+</div>
+   
+
+   
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="{% static 'b2.jfif' %}" alt="Forest" width="600" height="400">
+  </a>
+  
+    <div class="desc">Yamaha R15</div>
+    <div class="desc">₹ 1.4 Lacks</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="{% static 'b3.jfif' %}" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Hero Bike</div>
+    <div class="desc">₹ 50,000</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="{% static 'b4.jfif' %}" alt="Mountains" width="600" height="400">
+  </a>
+   <div class="desc">Bazaz Pulsar</div>
+    <div class="desc">₹ 70,000</div>
+</div>
+
+    
+    
+    <div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="{% static 'b6.jfif' %}" alt="Mountains" width="600" height="400">
+  </a>
+ <div class="desc">Honda Bike </div>
+    <div class="desc">₹ 90,000</div>
+</div>
+   
+    
+       <div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="{% static 'b7.jfif' %}" alt="Mountains" width="600" height="400">
+  </a>
+ <div class="desc">Suzuki Intruder </div>
+    <div class="desc">₹ 1.33 Lacks</div>
+</div>
+    
+    
+    
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg' %}">
+    <img src="{% static 'b8.jfif' %}"alt="Mountains" width="600" height="400">
+  </a>
+ <div class="desc">Hero Splendor </div>
+    <div class="desc">₹ 55,000</div>
+</div>
+   
+    
+  
+    
+    
+    
+    
+    
+</div>
+    
+    
+
+    <div class="bottomnav">
+       <a href="\">Home</a>
+        <a href="form">Register</a>
+        <a href="contact">Contact</a>
+        <a href="news">News</a>
+    <a href="login">Login</a>
+    
+           
+</div>
+
+</body>
+</html>
+
+

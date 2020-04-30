@@ -1,0 +1,89 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static '1styles.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  
+
+</style>
+</head>
+    
+    
+<body>
+<div class="bgimage">
+
+<div class="topnav">
+     {% if user.is_authenticated %}
+
+    <a style="color:red;">Hello,{{user.first_name}}</a>
+            <a href="logout">Logout</a>
+    {% else %}
+    <a href="login">Login</a>
+    <a href="form">Register</a>
+    {% endif %}
+    <a href="news">News</a>
+
+
+    <a href="contact">Contact</a>
+
+
+    <a href="\">Home</a>
+
+
+     <marquee style="font-family:Book Antiqua; color: #FFFFFF" bgcolor="#000080" scrollamount="18">Offer Available!!&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;   Hurry up!!&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Offer Available!! &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  Hurry up!!</marquee>
+</div>
+    <br>
+        <br>
+     <br>
+        <br>
+        <br>
+        <br>
+    <fieldset>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+        <p>Created By : Prakhar Bhavsar </p><br>
+        <p>Contact Info : 7999556313 </p><br>
+        <p>Other Info : prakharbhavsar77@gmail.com </p><br>
+        
+        </center>
+        
+    </fieldset>
+</div>
+    
+    
+
+   
+    <div class="bottomnav">
+       <a href="\">Home</a>
+        <a href="form.html">Register</a>
+        <a href="contact">Contact</a>
+        <a href="news">News</a>
+    <a href="login">Login</a>
+    
+           
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
